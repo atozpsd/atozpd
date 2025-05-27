@@ -7,7 +7,7 @@ $(function () {
     const $modalTitle = $modal.find('.modal-title');
     const $modalDescription = $modal.find('.modal-description');
     const $downloadBtn = $('#downloadImageBtn');
-    const $relatedList = $modal.find('.related-products-list');
+    const $relatedList = $modal.find('.related-products-list');    
 
     // Render products on the page
     function renderProducts() {
@@ -41,7 +41,7 @@ $(function () {
         $modalTitle.text(product.name);
         $modalDescription.text(product.description);
         $downloadBtn.attr({
-            href: product.image,
+            href: product.download, //changed image to new value download
             download: `${product.name.replace(/\s/g, '_').toLowerCase()}.jpg`
         });
 
@@ -63,7 +63,7 @@ $(function () {
             const relatedProduct = productsData.find(p => p.id === id);
             if (relatedProduct) {
                 const $relCard = $(`
-              <div class="related-product-card" tabindex="0" role="button" aria-pressed="false" aria-label="View details of related product ${relatedProduct.name}">
+              <div class="related-product-card" tabindex="0" role="button" aria-pressed="false" aria-label="You might also like these ${relatedProduct.name}">
                 <img class="related-product-image" src="${relatedProduct.image}" alt="${relatedProduct.name}" />
                 <div class="related-product-name">${relatedProduct.name}</div>
               </div>
