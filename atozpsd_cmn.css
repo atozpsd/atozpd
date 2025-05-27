@@ -5,15 +5,12 @@ html {
     position: relative;
     min-height: 100%;
 }
-
 body {
-    margin:0;
-}
+    margin:0;}
 
 .hdrbg {
     background-color: #b60e55;
 }
-
 /*Post*/
 .atozpsd_post{
     position:relative;   
@@ -128,9 +125,6 @@ body {
             box-shadow: 0 10px 15px rgb(0 0 0 / 0.15);
         }
 
-
-
-
 /* Modal styles */
 .modal-overlay {
     display: none;
@@ -144,7 +138,7 @@ body {
     backdrop-filter: blur(3px);
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
     .modal-overlay.active {
@@ -154,13 +148,13 @@ body {
 .modal-content {
     background: white;
     border-radius: 12px;
-    max-width: 1140px;
+    max-width: 60%;
     width: 100%;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     overflow-y: auto;
-    max-height: 90vh;
+    max-height: 94vh;
     position: relative;
-    padding: 15px 20px 40px 25px;
+    padding: 10px 10px 20px 10px;
     animation: fadeInScale 0.3s ease forwards;
 }
     .modal-content .model-two-clsm{
@@ -170,7 +164,7 @@ body {
     }
     .modal-content .model-two-clsm .lft {
         flex: 100%;
-        margin-right:20px;
+        margin-right:0;
     }
      .modal-content .model-two-clsm .rgt {
         flex: 100%;
@@ -191,8 +185,9 @@ body {
             border: none;
             background: transparent;
             font-size: 44px;
-            color: #424242;
-            line-height:32px;
+            color: #717171;
+            font-size:30px;
+            line-height: 32px;
             cursor: pointer;
             transition: color 0.2s ease;
         }
@@ -204,10 +199,9 @@ body {
 .modal-content .modal-image {
     width: 100%;
     max-height: 420px;
-    object-fit: contain;
-    border-radius: 8px;   
-    margin: 0 20px 15px 0;
-    background-color:#f7f7f7;
+    /*object-fit: contain;*/
+    border-radius: 8px !important;   
+    margin: 0 20px 15px 0;    
     padding:0 0;   
 }
 
@@ -274,13 +268,13 @@ body {
 
 .related-products-list {
     display: flex;
-    gap: 15px;
-    overflow-x: auto;
+    gap: 10px;
+    flex-wrap:wrap;
     padding-bottom: 10px;
 }
 
 .related-product-card {
-    flex: 0 0 140px;
+    flex: 0 0 240px;
     background: #fefefe;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
@@ -306,12 +300,11 @@ body {
 }
 
 .related-product-name {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #555;
     padding: 8px 6px;
     height: 60px;
-    overflow: hidden;
-    font-weight: 600;
+    overflow: hidden;   
 }
 
 /* Scrollbar styling for related products */
@@ -354,6 +347,9 @@ body {
         .two_clm .clm2 {
             width: 30%;
         }
+    .modal-content {        
+        padding: 15px 20px 40px 25px;      
+    }
     .modal-content .model-two-clsm {  
         flex-flow: row;
       }
@@ -365,6 +361,13 @@ body {
             flex: 30%;
         }
     .modal-content .modal-image {
-       padding: 50px 30px;
+       padding: 0;
+       border-radius:8px !important;
+    }
+        .modal-content .model-two-clsm .lft {
+           margin-right: 20px;
+        }
+    .modal-overlay {       
+        padding: 20px;
     }
 }
