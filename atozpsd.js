@@ -1,18 +1,21 @@
 ﻿//Render Products
 $(function () {
-    const $productsContainer = $('.products-container');
+    const $fileContainer = $('.products-container');
     const $modal = $('#productModal');
     const $modalCloseBtn = $modal.find('.modal-close');
     const $modalImage = $modal.find('.modal-image');
     const $modalTitle = $modal.find('.modal-title');
     const $modalDescription = $modal.find('.modal-description');
     const $downloadBtn = $('#downloadImageBtn');
-    const $relatedList = $modal.find('.related-products-list');    
-
+    const $relatedList = $modal.find('.related-products-list');
+   
+    let fileData;
+    fileData = atozpsdata;
+  
     // Render products on the page
     function renderProducts() {
-        $productsContainer.empty();
-        productsData.forEach(product => {
+        $fileContainer.empty();
+        fileData.forEach(product => {
             const $card = $(`
             <div class="product-card" tabindex="0" role="button" aria-pressed="false" aria-label="View details of ${product.name}">
             <div class=p-overlay></div>
@@ -25,13 +28,13 @@ $(function () {
           `);
             // Store product ID in DOM element data for easy lookup
             $card.data('product-id', product.id);
-            $productsContainer.append($card);
+            $fileContainer.append($card);
         });
     }
 
     // Open modal with product details
     function openModal(productId) {
-        const product = productsData.find(p => p.id === productId);
+        const product = fileData.find(p => p.id === productId);
         if (!product) return;
 
         $modalImage.attr({
@@ -41,56 +44,56 @@ $(function () {
         $modalTitle.text(product.name);
         $modalDescription.text(product.description);
         $downloadBtn.attr({
-            href: product.download, //changed image to new value download
+            href: product.download,
             download: `${product.name.replace(/\s/g, '_').toLowerCase()}.jpg`
         });
 
-        renderRelatedProducts(product.related, product.id);
+        renderRelatedFiles(product.related, product.id);
 
         $modal.addClass('active');
         // Focus modal for accessibility
         $modal.attr('tabindex', -1).focus();
     }
-
+   
     // Render related products
-    function renderRelatedProducts(relatedIds, currentProductId) {
+    function renderRelatedFiles(relatedIds, currentProductId) {
         $relatedList.empty();
         if (!relatedIds || relatedIds.length === 0) {
             $relatedList.append('<p>No related products found.</p>');
             return;
         }
         relatedIds.forEach(id => {
-            const relatedProduct = productsData.find(p => p.id === id);
-            if (relatedProduct) {
+            const relatedFile = fileData.find(p => p.id === id);
+            if (relatedFile) {
                 const $relCard = $(`
-              <div class="related-product-card" tabindex="0" role="button" aria-pressed="false" aria-label="You might also like these ${relatedProduct.name}">
-                <img class="related-product-image" src="${relatedProduct.image}" alt="${relatedProduct.name}" />
-                <div class="related-product-name">${relatedProduct.name}</div>
+              <div class="related-product-card" tabindex="0" role="button" aria-pressed="false" aria-label="You might also like these ${relatedFile.name}">
+                <img class="related-product-image" src="${relatedFile.image}" alt="${relatedFile.name}" />
+                <div class="related-product-name">${relatedFile.name}</div>
               </div>
             `);
-                $relCard.data('product-id', relatedProduct.id);
+                $relCard.data('product-id', relatedFile.id);
                 $relatedList.append($relCard);
             }
+          
         });
     }
-
+   
     // Close modal function
     function closeModal() {
         $modal.removeClass('active');
-        // Return focus to the last focused product card for accessibility
-        if ($lastFocusedProduct) {
-            $lastFocusedProduct.focus();
+        if ($lastFocusedFile) {
+            $lastFocusedFile.focus();
         }
     }
 
     // Track last focused product for returning focus
-    let $lastFocusedProduct = null;
+    let $lastFocusedFile = null;
 
     // Event delegation for product click
-    $productsContainer.on('click keypress', '.product-card', function (e) {
+    $fileContainer.on('click keypress', '.product-card', function (e) {
         if (e.type === 'click' || (e.type === 'keypress' && (e.key === 'Enter' || e.key === ' '))) {
             e.preventDefault();
-            $lastFocusedProduct = $(this);
+            $lastFocusedFile = $(this);
             const productId = $(this).data('product-id');
             openModal(productId);
         }
@@ -118,6 +121,5 @@ $(function () {
         }
     });
 
-    // Init render of product cards
     renderProducts();
 });
