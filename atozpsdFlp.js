@@ -43,10 +43,9 @@ $(function () {
         });
         $modalTitle.text(product.name);
         $modalDescription.text(product.description);
-        $downloadBtn.click(function () {
-             let dlnk = product.download;
-             let windOpn = window.open(dlnk, "_blank", "width=1020px,height=400px,left=440px,top=540px");
-             windOpn           
+         $downloadBtn.attr({
+             href: product.download,
+             download: `${product.name.replace(/\s/g, '_').toLowerCase()}.jpg`
          });
 
         renderRelatedFiles(product.related, product.id);
