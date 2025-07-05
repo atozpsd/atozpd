@@ -57,8 +57,8 @@ body {
 /* Products grid */
 .products-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(380px,1fr));
+    gap: 10px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -224,7 +224,7 @@ body {
     background: #FD4259;
     background: linear-gradient(90deg, rgba(253, 66, 89, 1) 0%, rgba(173, 70, 157, 1) 100%);
     color: white;
-    width:90%;
+    width:87%;
     padding: 15px 22px;
     border-radius: 8px;
     font-weight: bold;
