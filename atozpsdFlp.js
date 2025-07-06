@@ -1,4 +1,4 @@
-﻿//Render Products
+//Render Products
 $(function () {
     const $fileContainer = $('.products-container');
     const $modal = $('#productModal');
@@ -43,10 +43,11 @@ $(function () {
         });
         $modalTitle.text(product.name);
         $modalDescription.text(product.description);
-         $downloadBtn.attr({
-             href: product.download,
-             download: `${product.name.replace(/\s/g, '_').toLowerCase()}.jpg`
-         });
+       
+        $downloadBtn.attr({
+            href: product.download,
+            download: `${product.name.replace(/\s/g, '_').toLowerCase()}.jpg`
+        });
 
         renderRelatedFiles(product.related, product.id);
 
