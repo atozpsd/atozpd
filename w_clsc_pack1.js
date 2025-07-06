@@ -1,4 +1,4 @@
-﻿const atozpsdata = [{
+const atozpsdata = [{
     "id": 1,
     "name": "Wedding Classic Pack 1",
     "description": "Wedding Classic Pack 1 - Download for FREE",
@@ -131,7 +131,7 @@
     "id": 15,
     "name": "Wedding Classic Pack 1",
     "description": "Wedding Classic Pack 1 - Download for FREE",
-    "image": gimgpth + "1qYxeI4bkel06UZI4cIQOVitWgbhuFVMT",
+    "image": gimgpth + "1oMI4WH428of1tJStsGeLnUeOWo9GN08Q",
     "download": mfimgpth + "2umptj056lzdkim/atozpsd_wedding_classic_pack1%252815%2529.psd",
     "related": [12, 14, 10, 11]
 },
@@ -269,6 +269,4 @@
     "image": gimgpth + "1w54SjCbg3nh8A4RzmaVvbL-fA8RCtvuP",
     "download": mfimgpth + "2q64j27k0kwed4d/atozpsd_wedding_classic_pack1%252830%2529.psd",
     "related": [20, 24, 19, 21]
-}
-
-];
+}];
