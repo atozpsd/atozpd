@@ -126,7 +126,7 @@ const atozpsdata = [{
         "download": mfimgpth + "tfpqvh6j4zzd5k8/Wedding_Halfsheet_Pack1%252814%2529.psd",
         "related": [11, 12, 14, 15]
     },
-    /*  -------- 15 ---------*/
+    /*  -------- 15 ----------*/
     {
         "id": 15,
         "name": "Wedding Half Sheet Pack 1",
