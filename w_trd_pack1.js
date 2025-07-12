@@ -2,7 +2,7 @@ const atozpsdata = [{
     "id": 1,
     "name": "Wedding Traditional Pack 1",
     "description": "Wedding Traditional Pack 1 - Download for FREE",
-    "image": gimgpth + " 1zO0nZR-tHHkw_oopLCnJIcnaVREbTAqC",
+    "image": gimgpth + "1zO0nZR-tHHkw_oopLCnJIcnaVREbTAqC",
     "download": mfimgpth + "nnqqpwlcesxa2bg/atozpsd_tradional_pack_1%252801%2529.rar",
     "related": [2, 4, 6, 3]
 },
