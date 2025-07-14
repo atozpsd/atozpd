@@ -6,8 +6,20 @@
     --light-color: #f8f9fa;
     --dark-color: #212529;
     --transition: all 0.3s ease;
+    --primary-color: #4285f4;
+    --secondary-color: #34a853;
+    --dark-color: #202124;
+    --light-color: #f8f9fa;
+    --twitter-blue: #1da1f2;
+    --facebook-blue: #1877f2;
+    --instagram-blue: #d13c9a;
+    --pinterest-red: #e60023;
+    --telegram-orange: #229ed7;
+    --whatsapp-green: #25d366;
 }
-
+.d-none {
+    display:none;
+}
 .lbx-container {
     max-width: 1200px;
     margin: 0 auto;
