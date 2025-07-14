@@ -1,4 +1,4 @@
-﻿/*image Gallary*/
+/*image Gallary*/
 :root {
     --primary-color: #4361ee;
     --secondary-color: #3f37c9;
@@ -187,6 +187,147 @@
     .azlightbox .lightbox-btn.next {
         right: 20px;
     }
+
+/*social media custom links*/
+.sm-container {
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    border: 1px solid #eceff5;
+    padding: 20px 15px;
+    width: 100%;
+}
+
+    .sm-container h2 {
+        margin-bottom: 16px;
+        color: var(--dark-color);
+        font-weight: 600;
+        font-size: 28px;
+        margin-bottom: 6px;
+    }
+
+    .sm-container h6 {
+        margin-bottom: 16px;
+        color: var(--dark-color);
+        font-weight: 600;
+        font-size: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #e3e3e3;
+        line-height: 24px;
+    }
+
+.social-share-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+    .social-share-container .share-btn {
+        display: flex;
+        align-items: center;
+        padding: 11px 10px;
+        border-radius: 12px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        min-width: 44px;
+        justify-content: center;
+    }
+
+        .social-share-container .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-share-container .share-btn i {
+            font-size: 22px;
+            color: white;
+        }
+
+        .social-share-container .share-btn .count {
+            margin-left: 8px;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+
+    .social-share-container .facebook {
+        background-color: var(--facebook-blue);
+        color: white;
+    }
+
+    .social-share-container .twitter {
+        background-color: var(--twitter-blue);
+        color: white;
+    }
+
+    .social-share-container .instagram {
+        background-color: var(--instagram-blue);
+        color: white;
+    }
+
+    .social-share-container .pinterest {
+        background-color: var(--pinterest-red);
+        color: white;
+    }
+
+    .social-share-container .telegram {
+        background-color: var(--telegram-orange);
+        color: white;
+    }
+
+    .social-share-container .whatsapp {
+        background-color: var(--whatsapp-green);
+        color: white;
+    }
+
+.share-info {
+    margin-top: 16px;
+    background-color: #f5f5f5;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.total-shares {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.share-url {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+    .share-url input {
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px 0 0 4px;
+        width: 70%;
+        max-width: 500px;
+        outline: none;
+    }
+
+    .share-url button {
+        padding: 10px 15px;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+        .share-url button:hover {
+            background-color: #3367d6;
+        }
+
+/* - //End social media custom links*/
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
