@@ -123,4 +123,9 @@ $(function () {
     });
 
     renderProducts();
+        /*Payment Modal*/
+    $('.modal-toggle').on('click', function (e) {
+        e.preventDefault();
+        $('.modal-pym2').toggleClass('active');
+    });
 });
