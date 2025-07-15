@@ -125,7 +125,7 @@ body {
         }
 
 /* Modal styles */
-.modal-overlay {
+.modal-overlay, .modal-pym2 {
     display: none;
     position: fixed;
     z-index: 9999;
@@ -140,9 +140,10 @@ body {
     padding: 10px;
 }
 
-    .modal-overlay.active {
+    .modal-overlay.active, .modal-pym2.active {
         display: flex;
     }
+   
 
 .modal-content {
     background: white;
