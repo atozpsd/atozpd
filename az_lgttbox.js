@@ -1,4 +1,4 @@
-﻿//Social Shared Link atozpsd
+//Social Shared Link atozpsd
 $(document).ready(function () {
     // Current URL to share (you can customize this)
     const sharedUrl = window.location.href;
