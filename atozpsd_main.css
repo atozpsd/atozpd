@@ -148,7 +148,7 @@ body {
 .modal-content {
     background: white;
     border-radius: 12px;
-    max-width: 68%;
+    max-width: 100%;
     width: 100%;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     overflow-y: auto;
@@ -224,7 +224,7 @@ body {
     background: #FD4259;
     background: linear-gradient(90deg, rgba(253, 66, 89, 1) 0%, rgba(173, 70, 157, 1) 100%);
     color: white;
-    width:87%;
+    width:100%;
     padding: 15px 22px;
     border-radius: 8px;
     font-weight: bold;
@@ -389,8 +389,9 @@ body {
         .two_clm .clm2 {
             width: 30%;
         }
-    .modal-content {        
-        padding: 15px 20px 40px 25px;      
+    .modal-content {
+        padding: 15px 20px 40px 25px;
+        max-width: 68%;
     }
     .modal-content .model-two-clsm {  
         flex-flow: row;
@@ -402,6 +403,9 @@ body {
         .modal-content .model-two-clsm .rgt {
             flex: 30%;
         }
+    .download-button {
+        width: 87%;
+    }
     .modal-content .modal-image {
        padding: 0;
        border-radius:8px !important;
