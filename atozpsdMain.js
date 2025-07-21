@@ -63,8 +63,14 @@ $(function () {
         $modal.attr('tabindex', -1).focus();
     }
     /*Payment Modal*/
-    $('.modal-toggle').on('click', function (e) {       
+      $('.btn-buyNow').on('click', function (e) {
+        e.preventDefault();
         $('.modal-pym2').toggleClass('active');
+       
+    });
+    $('.modal-close').on('click', function (e) {
+        e.preventDefault();
+        $('.modal-pym2').removeClass('active');
     });
     // Render related products
     function renderRelatedFiles(relatedIds, currentProductId) {
