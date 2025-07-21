@@ -62,7 +62,10 @@ $(function () {
         // Focus modal for accessibility
         $modal.attr('tabindex', -1).focus();
     }
-   
+    /*Payment Modal*/
+    $('.modal-toggle').on('click', function (e) {       
+        $('.modal-pym2').toggleClass('active');
+    });
     // Render related products
     function renderRelatedFiles(relatedIds, currentProductId) {
         $relatedList.empty();
@@ -129,9 +132,4 @@ $(function () {
         }
     });    
     renderProducts();
-
-    /*Payment Modal*/
-    $('.modal-toggle').on('click', function (e) {       
-        $('.modal-pym2').toggleClass('active');
-    });
 });
