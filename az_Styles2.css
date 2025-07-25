@@ -207,7 +207,7 @@
     border-radius: 12px;
     border: 1px solid #eceff5;
     padding: 20px 15px;
-    width: 100%;
+  
 }
 
     .sm-container h2 {
@@ -237,7 +237,7 @@
     .social-share-container .share-btn {
         display: flex;
         align-items: center;
-        padding: 14px 6px;
+        padding: 12px 8px;
         border-radius: 12px;
         font-weight: 500;
         cursor: pointer;
@@ -245,7 +245,7 @@
         text-decoration: none;
         position: relative;
         overflow: hidden;
-        min-width: 44px;
+        min-width: 38px;
         justify-content: center;
     }
 
