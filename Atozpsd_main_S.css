@@ -31,7 +31,7 @@ a {
 }
 
 .w-100 {
-    width: 96%
+    width: 100%
 }
 
 .img-w {
@@ -39,6 +39,8 @@ a {
     width: 100%;
     height: auto;
 }
+
+
 /*Post*/
 .atozpsd_post {
     position: relative;
@@ -53,21 +55,9 @@ a {
 
 .post_desc {
     font-size: 16px;
-    font-weight: 550
+    font-weight: 500
 }
 
-.atozpsd_post .thumb {
-    display: block;
-    width: 100%;
-    height: auto;
-    justify-content: start
-}
-
-.post_desc {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-}
 
 .two_clm {
     display: flex;
@@ -81,6 +71,11 @@ a {
 
     .two_clm .clm2 {
         width: 100%;
+    }
+    .two_clm .clm-50 {
+        width: 100%;
+        margin-right:0;
+        margin-bottom:auto;
     }
 
 /*Product Loops*/
@@ -486,6 +481,10 @@ a {
         background-color: #4a9005;
         color: #fff;
     }
+.mb-3{
+    margin-bottom:15px
+}
+
 
 @media (min-width: 768px) {
     html {
@@ -503,7 +502,10 @@ a {
         .two_clm .clm2 {
             width: 30%;
         }
-
+        .two_clm .clm-50 {
+            width: 50%;
+            margin-right: 20px;
+        }
     .modal-content {
         padding: 15px 20px 40px 25px;
         max-width: 68%;
@@ -542,5 +544,8 @@ a {
 
     .modal-overlay {
         padding: 20px;
+    }
+    .mb-3 {
+        margin-bottom: 30px
     }
 }
